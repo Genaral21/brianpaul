@@ -1,297 +1,115 @@
-*
-
-{
-
+*{
     margin: 0;
-
     padding: 0;
-
-    box-sizing: border-box;
-
-}
-
-.full-page
-
-{
-
-    height: 100vh;
-
-    width: 100%;
-
-    background: blue;
-
-    position: absolute;
-
-}
-
-.sub-page
-
-{
-
-    width: 1266px;
-
-    height: 559px;
-
-    position: absolute;
-
-    background: url(366291.jpg);
-
-    background-size: cover;
-
-    background-position: center;
-
-    left: 50px;
-
-    top: 50px;
-
-}
-
-.navigation-bar
-
-{
-
-    display: flex;
-
-    align-items: center;
-
-    padding: 20px;
-
-    padding-left: 80px;
-
-    padding-right: 30px;
-
-    padding-top: 50px;
-
-}
-
-.logo
-
-{
-
-    position: fixed;
-
-    margin-top: 10px;
-
-}
-
-.logo a
-
-{
-
-    text-decoration: none;
-
-    color: white;
-
-    font-size: 30px;
-
-}
-
-nav
-
-{
-
-    flex: 1;
-
-    position: fixed;
-
-    right: 0;
-
-}
-
-nav ul
-
-{
-
-    display: inline-block;
-
-    list-style: none;
-
-}
-
-nav ul li
-
-{
-
-    display: inline-block;
-
-    margin-right: 90px;
-
-    margin-top: 17px;
-
-}
-
-nav ul li a
-
-{
-
-    text-decoration: none;
-
-    font-size: 20px;
-
-    color: white;
-
     font-family: sans-serif;
-
 }
 
-nav ul li a:hover
-
-{
-
-    color: saddlebrown;
-
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: skyblue;
+    position: relative;
 }
 
-.row
-
-{
-
+nav{
     display: flex;
-
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
     align-items: center;
+    justify-content: space-between;
+}
 
-    flex-wrap: wrap;
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
 
-    justify-content: space-around;
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: blue;
 
 }
 
-.col-1
-
-{
-
-    flex-basis: 50%;
-
-    min-width: 300px;
-
+.detel p{
+    color: #555;
+    line-height: 22px;
 }
 
-.form-box
-
-{
-
-    width: 300px;
-
-	height: 400px;
-
-	position: relative;
-
-    top: 50px;
-
-    left: 120px;
-
-	background: rgba(0,0,0,0.7);
-
+.detel a{
+    background: red;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
 }
 
-.main-heading
-
-{
-
-    color: orangered;
-
-    padding-bottom: 20px;
-
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
 }
 
-.form
-
-{
-
-	position: relative;
-
-	margin: 0 auto 100px;
-
-	padding: 45px;
-
-    text-align: center;
-
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
 }
 
-.form input
-
-{
-
-	font-family: sans-serif;
-
-	outline: none;
-
-    border: none;
-
-    border-bottom: 1px solid black;
-
-	width: 100%;
-
-	margin: 0 0 15px;
-
-	padding: 15px;
-
-	font-size: 14px;
-
+.images:hover .shape{
+    bottom: 40px;
 }
 
-.form button
-
-{
-
-	font-family: sans-serif;
-
-	width: 100%;
-
-    color: white;
-
-	font-size: 14px;
-
-	cursor: pointer;
-
-	padding: 15px;
-
-    border: none;
-
-    background: blue;
-
+.images:hover .girl{
+    left: 45%;
 }
 
-.form .message
-
-{
-
-    font-size: 12px;
-
-	margin: 15px 0 0;
-
-    color: white;
-
+.social{
+    margin-left: 8%;
+    margin-top: 100px;
 }
 
-.form .message a
-
-{
-
-	color: red;
-
-	text-decoration: none;
-
-}
-
-.form .register-form{
-
-	display: none;
-
-}
-
-.defination
-
-{
-
-    text-align: left;
-
+.social a{
     font-size: 30px;
+    color: #212121;
+    margin-right: 20px;
+}
 
-    color: white;
-
-    font-family: 'Kaushan Script', cursive;
-
-    padding-left: 60px;
-
+.social a:hover{
+    color: orange;
 }
